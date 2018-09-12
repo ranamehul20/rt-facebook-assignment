@@ -17,7 +17,7 @@ $fb = new Facebook\Facebook([
 $client = new Google_Client();
 $client->setClientId('587017132534-s267qdejgl5gj9q84mvfo7tcvmfqsoj7.apps.googleusercontent.com');
 $client->setClientSecret('bWLpSwR6unbYXNJzDjnsEcrc');
-$client->setRedirectUri('https://ranamehulj.000webhostapp.com/gdrive.php');
+$client->setRedirectUri('https://mehulranartchallenge.herokuapp.com/gdrive.php');
 $client->setScopes(array('https://www.googleapis.com/auth/drive.file'));
 
 if (isset($_GET['code']) || (isset($_SESSION['access_token']))) 
@@ -96,7 +96,7 @@ if (isset($_GET['code']) || (isset($_SESSION['access_token'])))
         }
         
     }while($url!='none');    
-	header('Location:https://ranamehulj.000webhostapp.com');
+	header('Location:https://mehulranartchallenge.herokuapp.com');
 
 } 
 else 
