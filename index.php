@@ -37,7 +37,7 @@ if(isset($_SESSION['fb_access_token'])){
 }
 else
 {  
-    header('Location:https://ranamehulj.000webhostapp.com/login.php');
+    header('Location:https://mehulranartchallenge.herokuapp.com/login.php');
 }
 ?>
     <!DOCTYPE html>
@@ -79,14 +79,14 @@ else
 				if(req.readyState==4 &&req.status==200) 
 				{ 
 					alert("Zip file created suceessfully"); //document.getElementById("response").innerHTML=req.responseText;
-					document.getElementById("result").innerHTML="<a href='http://ranamehulj.000webhostapp.com/file.zip' download>Download Zip file</a>";
+					document.getElementById("result").innerHTML="<a href='https://mehulranartchallenge.herokuapp.com/file.zip' download>Download Zip file</a>";
 				}
 			}
 			// Example query String ==> str="q=123"
 			//req.open(method,url,async/sync(i.e. true/false))
 			alert("Downloading image!");
 			document.getElementById("result").innerHTML="Creating Zip file";	
-			req.open("GET","https://ranamehulj.000webhostapp.com/downloadalbum.php?id=" + id+ "&name=" + name,true); 
+			req.open("GET","https://mehulranartchallenge.herokuapp.com/downloadalbum.php?id=" + id+ "&name=" + name,true); 
 			req.send();
        }
 	   function share(id,name)
@@ -126,12 +126,12 @@ else
 				if(req.readyState==4 &&req.status==200) 
 				{ 
 				   alert("Download complete sucessful");
-					document.getElementById("result").innerHTML="<a href='http://ranamehulj.000webhostapp.com/album.zip' download>Download Zip file</a>";
+					document.getElementById("result").innerHTML="<a href='https://mehulranartchallenge.herokuapp.com/album.zip' download>Download Zip file</a>";
 				}
 			}
 			alert("Downloading image!");
 			document.getElementById("result").innerHTML="Downloading Image....";
-			req.open("GET","https://ranamehulj.000webhostapp.com/downloadalbum.php?select_album="+vals,true); 
+			req.open("GET","https://mehulranartchallenge.herokuapp.com/downloadalbum.php?select_album="+vals,true); 
 	   
 			req.send();	
 		}
@@ -143,12 +143,12 @@ else
 				if(req.readyState==4 &&req.status==200) 
 				{ 
 				   alert("Download complete sucessful");
-					document.getElementById("result").innerHTML="<a href='http://ranamehulj.000webhostapp.com/album.zip' download>Download Zip file</a>";
+					document.getElementById("result").innerHTML="<a href='https://mehulranartchallenge.herokuapp.com/album.zip' download>Download Zip file</a>";
 				}
 			}
 			alert("Downloading image!");
 			document.getElementById("result").innerHTML="Downloading Image....";
-			req.open("GET","https://ranamehulj.000webhostapp.com/downloadalbum.php?flag=all",true); 
+			req.open("GET","https://mehulranartchallenge.herokuapp.com/downloadalbum.php?flag=all",true); 
 			req.send();
 	   }
 	   
