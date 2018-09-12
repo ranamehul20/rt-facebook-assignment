@@ -2,7 +2,7 @@
 require_once 'fbconfig.php';
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email','user_photos'];
-$loginUrl = $helper->getLoginUrl('https://ranamehulj.000webhostapp.com/fb-callback.php',$permissions);
+$loginUrl = $helper->getLoginUrl('https://mehulranartchallenge.herokuapp.com/fb-callback.php',$permissions);
 
 ?>
 <html>
@@ -52,7 +52,7 @@ $loginUrl = $helper->getLoginUrl('https://ranamehulj.000webhostapp.com/fb-callba
       <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="https://ranamehulj.000webhostapp.com">Facebook Album Downloader</a>
+            <a class="navbar-brand" href="https://mehulranartchallenge.herokuapp.com">Facebook Album Downloader</a>
           </div>
         </div>
       </div>
